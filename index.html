@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" size="32x32" href="imagenes/logo-circulo.svg">
+    <link rel="stylesheet" href="css/iconmenu.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Base Care</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu" id="menu">
+            <a href="" class="logo"><img src="imagenes/logo.svg" alt="logo"></a>
+            <a href="#home" class="rosa">Home</a>
+            <a href="#news" class="rosa">News</a>
+            <a href="#contact" class="rosa">Contact</a>
+            <a href="#about" class="rosa">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="menuResposive()"><span class="icon-menu"></span></a>
+            </a>
+        </div>
+        <div id="shopping">
+            <img src="imagenes/shopping.png" alt="shopping" class="shopping">
+            <span class="incador-cantidad">0</span>
+            <div id="carrito">
+                <table id="lista-carrito" class="u-full-width">
+
+                    <tbody></tbody>
+
+                </table>
+                <p class="msnvacio">Tú bolsa esta Vacia.</p>
+                <h1 class="total">Total a pagar: $<span class="totalPagar"></span></h1>
+                <button id="vaciar-carrito" class="comprar button u-full-width">Vaciar Carrito</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <img src="imagenes/modelo2.png" alt="" class="banner__img">
+            <div class="banner-text">
+                <div class="cardsoon__text">
+                    <h1 class="cardsoon__tittle">
+                        <span class="cardsoon__tittle-colored"> base <br></span> disfruta <br> cuida<br>
+                        <span class="cardsoon__tittle-colored"> Restaura </span>
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <section class="descipcion-pruductos">
+            <div class="publicida">
+                <div>
+                    <img src="imagenes/productos-limpeiza.png" width="60px" alt="">
+                    <p>Productos para el cuidado <br> de tu piel</p>
+                </div>
+                <div>
+                    <img src="imagenes/maquillaje.jpg.png" width="45px" alt="">
+                    <p>Maquillaje con propiedades rejuvenecedoras</p>
+                </div>
+                <div>
+                    <img src="imagenes/woman-perfil.png" width="30px" alt="">
+                    <p> y muchas cosas más para <br> que te consientas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newproductos">
+            <p class="secciones">Nuevos Productos</p>
+            <div id="carrusel">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="imagenes/sombras.png" height="150" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="imagenes/splashx1.png" height="150" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="imagenes/splashx1fresa.png" height="150" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="imagenes/splashx1limon.png" height="150" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="imagenes/sombras.png" height="150" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="imagenes/splashx1.png" height="150" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="imagenes/splashx1fresa.png" height="150" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="imagenes/splashx1limon.png" height="150" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="imagenes/sombras.png" height="150" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="imagenes/splashx1.png" height="150" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="imagenes/splashx1fresa.png" height="150" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="imagenes/splashx1limon.png" height="150" width="250" alt="" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <p class="secciones">Shopping</p>
+        <section class="shop">
+
+            <div class="card">
+                <img src="imagenes/sombras.png" alt="" class="item">
+                <div class="descripcion-producto">
+                    <p class="name-producto">Sombras Premiun</p>
+                    <img src="imagenes/estrellas.png" alt="stars">
+                    <p class="precio" value="50000">$ 50.000</p>
+                    <button class="comprar" data-id="1">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/splashx1.png" alt="" class="item">
+                <div class="descripcion-producto">
+                    <p class="name-producto">Splash Neutral</p>
+                    <img src="imagenes/estrellas.png" alt="stars">
+                    <p class="precio" value="50000">$50.000</p>
+                    <button class="comprar" data-id="2">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/splashx1fresa.png" alt="" class="item">
+                <div class="descripcion-producto">
+                    <p class="name-producto">Splash Fresa</p>
+                    <img src="imagenes/estrellas.png" alt="stars">
+                    <p class="precio" value="50000">$50.000</p>
+                    <button class="comprar" data-id="3">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/splashx1limon.png" alt="" class="item">
+                <div class="descripcion-producto">
+                    <p class="name-producto">Splash Limon</p>
+                    <img src="imagenes/estrellas.png" alt="stars">
+                    <p class="precio" value="50000">$50.000</p>
+                    <button class="comprar" data-id="4">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+
+            <form action="" method="post" id="formulario">
+                <p class="secciones">Contactanos</p>
+                <input type="text" id="fname" class="fname" placeholder="Full Name">
+                <input type="email" name="email" id="email" class="email" placeholder="Email Address">
+                <input type="number" name="number" id="number" placeholder="Phone Number">
+                <textarea name="asunto" id="asunto" cols="30" rows="10" placeholder="Asunto"></textarea>
+                <div class="botones">
+                    <button type="submit" class="submit">Enviar</button>
+                    <button type="reset" class="reset">Borrar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="socialmedia">
+            <img src="imagenes/sicialmedia/icon-facebook.svg" alt="icon-facebook">
+            <img src="imagenes/sicialmedia/icon-instagram.svg" alt="icon-instagram">
+            <img src="imagenes/sicialmedia/icon-twitter.svg" alt="icon-twitter">
+            <img src="imagenes/sicialmedia/icon-youtube.svg" alt="icon-youtube">
+        </div>
+        <div class="menu2">
+            <a href="#home" class="rosa">Home</a>
+            <a href="#news" class="rosa">News</a>
+            <a href="#contact" class="rosa">Contact</a>
+            <a href="#about" class="rosa">About</a>
+        </div>
+        <div class="right">
+            <p class="copyright">Company Base © 2021</p>
+        </div>
+    </footer>
+    <script src="js/menuresponsive.js"></script>
+    <script src="js/validacionemail.js"></script>
+</body>
+
+</html>

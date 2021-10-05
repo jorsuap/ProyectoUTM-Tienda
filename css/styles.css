@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* -------------------------Menu---------------------------- */
+header {
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 0px 10px 5px hsla(0, 75%, 89%, 0.479);
+    z-index: 1;
+}
+
+.logo {
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+.menu {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+.menu a {
+    float: left;
+    display: block;
+    color: hsl(0, 6%, 24%);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    z-index: 2;
+}
+
+.menu a:hover {
+    color: hsl(0, 36%, 70%);
+    cursor: pointer;
+}
+
+.menu .icon {
+    display: none;
+    margin: 10px;
+}
+
+.shopping {
+    width: 35px;
+    margin: 10px;
+    position: relative;
+}
+
+#shopping {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+
+#shopping #carrito {
+    display: none;
+}
+
+#shopping:hover #carrito {
+    display: block;
+    position: absolute;
+    right: -30px;
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 100px;
+    min-width: 300px;
+    cursor: pointer;
+}
+
+.incador-cantidad {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    padding: 5px 8px 3px 8px;
+    background: -webkit-linear-gradient(left, #741d51 0%, #e44e52 100%);
+    border-radius: 50%;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    #shopping:hover #carrito {
+        right: -70px;
+    }
+
+    #shopping {
+        position: absolute;
+        top: 0px;
+        right: 60px;
+    }
+
+    .menu a:not(:first-child) {
+        display: none;
+    }
+
+    .menu a.icon {
+        float: right;
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu.responsive {
+        position: relative;
+    }
+
+    .menu.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .rosa {
+        background: hsla(0, 75%, 89%, 0.479);
+    }
+
+    .rosa:hover {
+        background: white;
+        cursor: pointer;
+    }
+}
+
+/* -------------------------Banner---------------------------- */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.banner {
+    width: 100%;
+    margin-top: 60px;
+    height: auto;
+}
+
+.banner__img {
+    width: 100%;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.cardsoon__text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardsoon__tittle {
+    -webkit-text-size-adjust: 100%;
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 85px;
+    letter-spacing: 20px;
+    color: hsl(0, 6%, 24%);
+}
+
+.cardsoon__tittle-colored {
+    color: white;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1400px) {
+    .banner-text {
+        top: 32%;
+        left: 55%;
+    }
+
+    .cardsoon__tittle {
+        font-size: 3rem;
+        line-height: 60px;
+        letter-spacing: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .cardsoon__tittle {
+        font-size: 2rem;
+        line-height: 40px;
+        letter-spacing: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-text {
+        top: 20%;
+        left: 55%;
+    }
+
+    .cardsoon__tittle {
+        font-size: 2rem;
+        line-height: 40px;
+        letter-spacing: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner-text {
+        top: 120px;
+        left: 210px;
+    }
+
+    .cardsoon__tittle {
+        font-size: 1.5rem;
+        line-height: 30px;
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    .cardsoon__tittle {
+        font-size: 1rem;
+        line-height: 25px;
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .banner-text {
+        top: 120px;
+        left: 180px;
+    }
+
+    .cardsoon__tittle {
+        font-size: 0.9rem;
+        line-height: 20px;
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (max-width: 823px) and (max-height:414px) {
+    .banner-text {
+        top: 50%;
+        left: 55%;
+    }
+}
+
+/* -----------------------publicidad----------------------- */
+.descipcion-pruductos {
+    width: 100%;
+    height: 100px;
+    background: -webkit-linear-gradient(left, #741d51 0%, #e44e52 100%);
+    background: linear-gradient(to right, #741d51 0%, #e44e52 100%);
+    display: flex;
+    justify-content: center;
+    margin-top: -4px;
+}
+
+.publicida {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+.publicida div {
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.publicida img {
+    margin: 20px;
+}
+
+@media screen and (max-width:1200px) {
+    .publicida {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .publicida {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .publicida div p {
+        display: none;
+    }
+
+    .publicida img {
+        margin: 15px;
+    }
+}
+
+/* --------------------------Carrucel --------------------------------*/
+
+.newproductos {
+    width: 80%;
+}
+
+.newproductos p {
+    margin-top: 70px;
+}
+
+.secciones {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: hsl(0, 6%, 24%);
+}
+
+#carrusel {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: hsl(0, 0%, 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slider {
+    background: white;
+    -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+
+}
+
+.slider::before,
+.slider::after {
+    background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 150px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+
+}
+
+.slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(250px * 8);
+
+}
+
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+
+@media screen and (max-width:850px) {
+    .newproductos p {
+        margin-top: 50px;
+    }
+}
+
+/*------------------------------------shop--------------------------- */
+
+.shop {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%;
+    display: grid;
+    gap: 2em;
+    grid-auto-rows: 23em;
+    grid-template-columns: repeat(auto-fill, minmax(17em, 1fr));
+}
+
+.card {
+    /* gap: 10px; */
+    border-radius: 5PX;
+    background-color: white;
+    border: solid 1px hsl(0, 64%, 91%);
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0px 3px 10px 5px hsl(0, 75%, 89%);
+    cursor: pointer;
+}
+
+.item {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.descripcion-producto {
+    height: 50%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.precio {
+    color: hsl(0, 36%, 70%);
+}
+
+.comprar {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    outline: none;
+    padding: 12px 18px;
+    border-radius: 35px;
+    width: 200px;
+    right: 0px;
+
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+}
+
+.comprar:hover {
+    box-shadow: 0px 3px 10px 3px hsl(0, 80%, 86%);
+    cursor: pointer;
+}
+
+.name-producto {
+    color: hsl(0, 6%, 24%);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+@media screen and (max-width:850px) {
+    .shop {
+        width: 80%;
+    }
+}
+
+/* -----------------------------Contacto------------------------- */
+
+.contact {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.contact p {
+    margin: 30px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../imagenes/bg-pattern-desktop.svg) no-repeat;
+    background-size: cover;
+}
+
+form input,
+textarea {
+    margin: 5px;
+    width: 40%;
+    padding: 19px;
+    border-radius: 35px;
+    border: solid 1px hsl(0, 36%, 70%);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1em;
+    outline: none;
+    font-size: 1.1em;
+}
+
+input {
+    color: hsl(0, 6%, 24%);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: hsla(0, 36%, 70%, .5);
+    font-size: .9rem;
+}
+
+.submit,
+.reset {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    padding: 18px;
+    border-radius: 35px;
+    width: 150px;
+    box-shadow: 0px 3px 10px 3px hsl(0, 80%, 86%);
+    cursor: pointer;
+    color: white;
+    margin: 50px 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+@media(max-width:800px) {
+
+    form input,
+    textarea {
+        width: 90%;
+    }
+
+    .submit,
+    .reset {
+        width: 140px;
+    }
+}
+
+/* -------------------------------footer------------------------- */
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.socialmedia {
+    margin: 40px 0;
+}
+
+.socialmedia img {
+    margin: 0 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.menu2 a {
+    text-decoration: none;
+    color: hsl(0, 6%, 24%);
+    margin: 0 15px;
+    font-size: 1.2rem;
+ 
+}
+
+.menu2 a:hover {
+    color: hsl(0, 36%, 70%);
+    cursor: pointer;
+}
+
+.copyright {
+    color: hsl(0, 6%, 24%);
+    margin: 40px 0;
+}
+
+@media(max-width:400px) {
+    .menu2 a {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+}
+/* ----------------------------Errores formulario-------------------- */
+
+.text-error {
+    color: hsl(0, 93%, 68%);
+    /* padding-left: 20px; */
+    margin: 0;
+}
+.img-error {
+  
+    background: url(../imagenes/icon-error.svg) no-repeat 95%;
+    border: solid 2px hsl(0, 93%, 68%);
+}
+.opacidad{
+    opacity: 50%;
+}
+.mnsExitoso{
+    color: black;
+}
