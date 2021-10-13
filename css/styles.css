@@ -98,7 +98,7 @@ header {
     visibility: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 
     .logo {
         margin-left: 10px;
@@ -668,4 +668,83 @@ footer {
 }
 .mnsExitoso{
     color: black;
+}
+
+/* ----------------------------------estilos del carrito--------------------- */
+.u-full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#vaciar-carrito {
+    margin-top: 30px;
+}
+.incador-cantidad_visible {
+    visibility: visible;
+}
+
+.hiddecarrito {
+    visibility: hidden;
+    font-weight: 200;
+    color: gray;
+}
+
+.msnvacio {
+    font-weight: 400;
+    color: gray;
+    padding-top: 30px;
+    text-align: center;
+    display: none;
+}
+
+.msnvacio-block {
+    display: block;
+}
+.borrar-producto {
+    background-color: hsl(0, 36%, 70%);
+    border-radius: 50%;
+    padding: 8px 9px 5px 9px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.borrar-producto:hover {
+    color: hsl(0, 6%, 24%);
+    font-weight: 600;
+}
+
+th,
+td {
+    padding: 12px 15px;
+}
+
+th:first-child,
+td:first-child {
+
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+.alinear {
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 150px;
+    height: 100px;
+}
+
+.name-producto-carrito {
+    font-weight: 600;
+}
+
+.total {
+    font-size: 1.2em;
+    text-align: center;
 }

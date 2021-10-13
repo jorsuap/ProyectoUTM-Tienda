@@ -16,9 +16,10 @@
         <div class="menu" id="menu">
             <a href="" class="logo"><img src="imagenes/logo.svg" alt="logo"></a>
             <a href="#home" class="rosa">Home</a>
-            <a href="#news" class="rosa">News</a>
+            <a href="#new" class="rosa">News</a>
+            <a href="#shop" class="rosa">Shop</a>
             <a href="#contact" class="rosa">Contact</a>
-            <a href="#about" class="rosa">About</a>
+            <a href="#footer" class="rosa">Footer</a>
             <a href="javascript:void(0);" class="icon" onclick="menuResposive()"><span class="icon-menu"></span></a>
             </a>
         </div>
@@ -38,7 +39,7 @@
         </div>
     </header>
     <main>
-        <section class="banner">
+        <section class="banner" id="home">
             <img src="imagenes/modelo2.png" alt="" class="banner__img">
             <div class="banner-text">
                 <div class="cardsoon__text">
@@ -66,57 +67,57 @@
             </div>
         </section>
 
-        <section class="newproductos">
+        <section class="newproductos" id="new">
             <p class="secciones">Nuevos Productos</p>
             <div id="carrusel">
                 <div class="slider">
                     <div class="slide-track">
                         <div class="slide">
-                            <img src="imagenes/sombras.png" height="150" width="250" alt="" />
+                            <img src="imagenes/productos/sombras.png" height="150" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="imagenes/splashx1.png" height="150" width="250" alt="" />
+                            <img src="imagenes/productos/splashx1.png" height="150" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="imagenes/splashx1fresa.png" height="150" width="250" alt="" />
+                            <img src="imagenes/productos/splashx1fresa.png" height="150" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="imagenes/splashx1limon.png" height="150" width="250" alt="" />
+                            <img src="imagenes/productos/splashx1limon.png" height="150" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="imagenes/sombras.png" height="150" width="250" alt="" />
+                            <img src="imagenes/productos/sombras.png" height="150" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="imagenes/splashx1.png" height="150" width="250" alt="" />
+                            <img src="imagenes/productos/splashx1.png" height="150" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="imagenes/splashx1fresa.png" height="150" width="250" alt="" />
+                            <img src="imagenes/productos/splashx1fresa.png" height="150" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="imagenes/splashx1limon.png" height="150" width="250" alt="" />
+                            <img src="imagenes/productos/splashx1limon.png" height="150" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="imagenes/sombras.png" height="150" width="250" alt="" />
+                            <img src="imagenes/productos/sombras.png" height="150" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="imagenes/splashx1.png" height="150" width="250" alt="" />
+                            <img src="imagenes/productos/splashx1.png" height="150" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="imagenes/splashx1fresa.png" height="150" width="250" alt="" />
+                            <img src="imagenes/productos/splashx1fresa.png" height="150" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="imagenes/splashx1limon.png" height="150" width="250" alt="" />
+                            <img src="imagenes/productos/splashx1limon.png"" height="150" width="250" alt="" />
                         </div>
 
                     </div>
                 </div>
             </div>
         </section>
-        <p class="secciones">Shopping</p>
-        <section class="shop">
+        <p class="secciones" id="shop">Shopping</p>
+        <section class="shop" >
 
             <div class="card">
-                <img src="imagenes/sombras.png" alt="" class="item">
+                <img src="imagenes/productos/sombras.png" alt="" class="item">
                 <div class="descripcion-producto">
                     <p class="name-producto">Sombras Premiun</p>
                     <img src="imagenes/estrellas.png" alt="stars">
@@ -125,7 +126,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="imagenes/splashx1.png" alt="" class="item">
+                <img src="imagenes/productos/splashx1.png" alt="" class="item">
                 <div class="descripcion-producto">
                     <p class="name-producto">Splash Neutral</p>
                     <img src="imagenes/estrellas.png" alt="stars">
@@ -134,7 +135,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="imagenes/splashx1fresa.png" alt="" class="item">
+                <img src="imagenes/productos/splashx1fresa.png" alt="" class="item">
                 <div class="descripcion-producto">
                     <p class="name-producto">Splash Fresa</p>
                     <img src="imagenes/estrellas.png" alt="stars">
@@ -143,7 +144,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="imagenes/splashx1limon.png" alt="" class="item">
+                <img src="imagenes/productos/splashx1limon.png" alt="" class="item">
                 <div class="descripcion-producto">
                     <p class="name-producto">Splash Limon</p>
                     <img src="imagenes/estrellas.png" alt="stars">
@@ -151,8 +152,81 @@
                     <button class="comprar" data-id="4">Agregar al Carrito</button>
                 </div>
             </div>
+            <div class="card">
+                <img src="imagenes/productos/velitasx3.png" alt="" class="item">
+                <div class="descripcion-producto">
+                    <p class="name-producto">Splash Limon</p>
+                    <img src="imagenes/estrellas.png" alt="stars">
+                    <p class="precio" value="50000">$50.000</p>
+                    <button class="comprar" data-id="4">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/productos/velitax1-morada.png" alt="" class="item">
+                <div class="descripcion-producto">
+                    <p class="name-producto">Splash Limon</p>
+                    <img src="imagenes/estrellas.png" alt="stars">
+                    <p class="precio" value="50000">$50.000</p>
+                    <button class="comprar" data-id="4">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/productos/velitax1.png" alt="" class="item">
+                <div class="descripcion-producto">
+                    <p class="name-producto">Splash Limon</p>
+                    <img src="imagenes/estrellas.png" alt="stars">
+                    <p class="precio" value="50000">$50.000</p>
+                    <button class="comprar" data-id="4">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/productos/ayebrow.png" alt="" class="item">
+                <div class="descripcion-producto">
+                    <p class="name-producto">Splash Limon</p>
+                    <img src="imagenes/estrellas.png" alt="stars">
+                    <p class="precio" value="50000">$50.000</p>
+                    <button class="comprar" data-id="4">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/productos/blasus-doble.png" alt="" class="item">
+                <div class="descripcion-producto">
+                    <p class="name-producto">Splash Limon</p>
+                    <img src="imagenes/estrellas.png" alt="stars">
+                    <p class="precio" value="50000">$50.000</p>
+                    <button class="comprar" data-id="4">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/productos/brochas1.png" alt="" class="item">
+                <div class="descripcion-producto">
+                    <p class="name-producto">Splash Limon</p>
+                    <img src="imagenes/estrellas.png" alt="stars">
+                    <p class="precio" value="50000">$50.000</p>
+                    <button class="comprar" data-id="4">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/productos/brochas2.png" alt="" class="item">
+                <div class="descripcion-producto">
+                    <p class="name-producto">Splash Limon</p>
+                    <img src="imagenes/estrellas.png" alt="stars">
+                    <p class="precio" value="50000">$50.000</p>
+                    <button class="comprar" data-id="4">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/productos/brochas3.png" alt="" class="item">
+                <div class="descripcion-producto">
+                    <p class="name-producto">Splash Limon</p>
+                    <img src="imagenes/estrellas.png" alt="stars">
+                    <p class="precio" value="50000">$50.000</p>
+                    <button class="comprar" data-id="4">Agregar al Carrito</button>
+                </div>
+            </div>
+            
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
 
             <form action="" method="post" id="formulario">
                 <p class="secciones">Contactanos</p>
@@ -168,7 +242,7 @@
             </form>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="socialmedia">
             <img src="imagenes/sicialmedia/icon-facebook.svg" alt="icon-facebook">
             <img src="imagenes/sicialmedia/icon-instagram.svg" alt="icon-instagram">
@@ -187,6 +261,7 @@
     </footer>
     <script src="js/menuresponsive.js"></script>
     <script src="js/validacionemail.js"></script>
+    <script src="js/carritocompras.js"></script>
 </body>
 
 </html>
