@@ -144,7 +144,7 @@ header {
         text-align: left;
     }
 
-    .rosa :not(back){
+    .rosa {
         background: hsla(0, 75%, 89%, 0.479);
     }
 
